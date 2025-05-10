@@ -5,3 +5,12 @@ apt -y remove desktop-base tango-icon-theme xorg
 # as it's not a hard dependency, only a Recommends of gvmd-common
 apt -y remove texlive-latex-extra
 apt -y autoremove
+
+# ----------------------custom settings--------------------------
+
+# setting keyboard to tr
+sed -i 's/^XKBLAYOUT=.*/XKBLAYOUT="tr"/' /etc/default/keyboard
+dpkg-reconfigure -f noninteractive keyboard-configuration
+udevadm trigger --subsystem-match=input --action=change
+
+

@@ -13,7 +13,7 @@ kali-desktop-xfce
 ## Metapackages
 ##   You can customize the set of Kali metapackages (groups of tools) to install
 ##   For the complete list see: https://www.kali.org/tools/kali-meta/
-kali-linux-default
+#kali-linux-default
 
 ## Extra Kali packages/tools/applications
 ##   For the complete list see: https://www.kali.org/tools/
